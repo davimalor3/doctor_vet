@@ -82,7 +82,7 @@ endif; ?>
                 </div>
 
                 <div class="row">
-                    <!-- Sexo aniaml -->
+                    <!-- Sexo -->
                     <div class="col-md-6 mb-3">
                         <label class="form-label">Sexo (não editável)</label>
                         <select class="form-select" disabled>

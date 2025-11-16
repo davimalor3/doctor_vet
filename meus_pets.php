@@ -114,7 +114,7 @@ include 'includes/header.php';
 
         </div>
 
-        <!-- INFORMAÇÕES DE TESTE PARA TESTAR PAGINA -->
+        <!-- INFORMAÇÕES PARA TESTAR PAGINA -->
         <!-- <div class="col-md-4">
             <div class="pet-card">
                 <h5 class="fw-bold">Bolt</h5>

@@ -69,7 +69,7 @@ include 'includes/header.php';
 <!-- Conteudo Principalç -->
 <div class="container py-5">
 
-    <!-- BEM-VINDO / TÍTULO -->
+    <!-- BEM-VINDO  -->
     <div class="dashboard-welcome mb-5">
         <h3 class="fw-bold" style="color:#2b3990;">Meus Pets</h3>
         <p class="text-muted mb-0">Aqui estão todos os seus pets cadastrados com todas as informações.</p>

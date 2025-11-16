@@ -60,7 +60,7 @@ $logged = isset($_SESSION['user_id']);
                 <?php endif; ?>
             </ul>
 
-            <!-- MENU P/ MOBILE -->
+            <!-- MENU P/ MOBILe -->
             <div class="d-flex d-md-none align-items-center gap-2">
 
                 <?php if ($logged): ?>

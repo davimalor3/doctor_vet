@@ -54,7 +54,7 @@ include 'includes/header.php';
     }
 </style>
 
-<!-- CONTEÚDO PRINCIPAL-->
+<!-- CONTEUDO PRINCIPAL-->
 <div class="container py-5">
 
     <!-- BEM-VINDO -->

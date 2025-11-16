@@ -1,0 +1,305 @@
+/* =========================================
+   ESTILO GLOBAL
+========================================= */
+
+body {
+  background: #f3f5f7;
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Cores padrão */
+:root {
+  --primary: #333961;
+  --primary-light: #474e7e;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --background: #f8f9fa;
+  --white: #ffffff;
+}
+
+/* =========================================
+   TÍTULOS E TEXTOS
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+}
+
+.btn-secondary {
+  background-color: var(--secondary) !important;
+  border: none;
+}
+
+.btn-success {
+  background-color: var(--success) !important;
+  border: none;
+}
+
+.btn-danger {
+  background-color: var(--danger) !important;
+  border: none;
+}
+
+.btn-warning {
+  background-color: var(--warning) !important;
+  border: none;
+  color: #000;
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+}
+
+.btn {
+  border-radius: 8px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   CARDS PADRONIZADOS
+========================================= */
+
+.card-default {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 25px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Card do dashboard e historico */
+.dashboard-welcome {
+  background: var(--background);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================
+   PET CARD
+========================================= */
+
+.pet-card {
+  background: var(--white);
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+  border-radius: 14px;
+  transition: 0.2s ease;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.pet-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pet-card h5 {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* =========================================
+   HISTÓRICO DE ATENDIMENTO
+========================================= */
+.history-item {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+/* Badge */
+.badge {
+  font-size: 0.8rem;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
+.badge.bg-warning {
+  color: #000 !important;
+}
+
+/* =========================================
+   FORMULÁRIOS
+========================================= */
+
+input,
+select,
+textarea {
+  border-radius: 10px !important;
+  padding: 10px !important;
+  border: 1px solid #d0d0d0 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 6px rgba(43, 57, 144, 0.25) !important;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.logo {
+  text-decoration: none !important;
+}
+
+.logo span {
+  color: var(--primary-light);
+}
+
+.main-header {
+  background: white;
+  border-bottom: 1px solid #e7e7e7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Hover glow */
+.hv {
+  transition: 0.25s ease;
+}
+
+.hv:hover {
+  color: var(--primary-light) !important;
+  text-shadow: 0 0 8px rgba(70, 110, 255, 0.4);
+}
+
+/* Navegação desktop */
+.nav-menu a,
+.nav-link {
+  text-decoration: none;
+  color: #333 !important;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.nav-menu a:hover,
+.nav-link:hover {
+  color: var(--primary-light) !important;
+  text-shadow: 0 0 6px rgba(70, 110, 255, 0.25);
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border-radius: 8px;
+}
+
+.dropdown-item.dd-hv {
+  transition: 0.25s ease;
+}
+
+.dropdown-item.dd-hv:hover {
+  background: rgba(43, 57, 144, 0.1);
+  color: var(--primary) !important;
+  padding-left: 18px;
+}
+
+/* Botão do menu */
+.account-btn {
+  width: 40px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+/* =========================================
+   MENU MOBILE
+========================================= */
+
+.mobile-menu {
+  background: white;
+  border-top: 1px solid #ddd;
+  display: none;
+  padding: 20px;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-link {
+  display: block;
+  padding: 12px 0;
+  color: #333;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-link:hover {
+  color: var(--primary);
+  text-shadow: 0 0 6px rgba(70, 110, 255, 0.25);
+}
+
+.menu-toggle,
+.mobile-menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  background: #222;
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+/* =========================================
+   ELEMENTOS REUTILIZÁVEIS
+========================================= */
+
+.section-title {
+  color: var(--primary);
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.separator {
+  height: 2px;
+  width: 60px;
+  background: var(--primary);
+  margin-bottom: 20px;
+  border-radius: 2px;
+}

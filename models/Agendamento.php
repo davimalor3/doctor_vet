@@ -48,16 +48,21 @@ class Agendamento
         ]);
     }
 
-    public static function updateStatus($id, $status)
+    public static function updateStatus($id, $user_id, $status)
     {
         global $pdo;
 
-        $sql = "UPDATE agendamento SET status = :s WHERE id = :id";
+        $sql = "UPDATE agendamento a
+            JOIN pets p ON p.id = a.pet_id
+            SET a.status = :s
+            WHERE a.id = :id AND p.user_id = :user";
+
         $stmt = $pdo->prepare($sql);
 
         return $stmt->execute([
             's' => $status,
-            'id' => $id
+            'id' => $id,
+            'user' => $user_id
         ]);
     }
 
@@ -90,5 +95,31 @@ class Agendamento
             'dh' => $data_hora,
             'id' => $id,
         ]);
+    }
+
+    public static function horarioOcupado($data_hora, $ignorar_id = null)
+    {
+        global $pdo;
+
+        $sql = "SELECT id FROM agendamento
+            WHERE data_hora = :dh
+            AND status != 'cancelado'";
+
+        if ($ignorar_id) {
+            $sql .= " AND id != :id";
+        }
+
+        $stmt = $pdo->prepare($sql);
+
+        if ($ignorar_id) {
+            $stmt->execute([
+                'dh' => $data_hora,
+                'id' => $ignorar_id
+            ]);
+        } else {
+            $stmt->execute(['dh' => $data_hora]);
+        }
+
+        return $stmt->fetch() ? true : false;
     }
 }

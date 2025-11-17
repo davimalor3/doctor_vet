@@ -8,8 +8,6 @@
     include 'includes/header.php';
     ?>
 
-
-    <!-- TÍTULO DA PÁGINA -->
     <section class="py-5 bg-light">
         <div class="container">
             <h2 class="mb-3">Cadastrar Novo Pet</h2>
@@ -19,10 +17,10 @@
 
     <!-- Mensagem de erro -->
     <?php if (isset($_SESSION['error'])): ?>
-    <div class="alert alert-danger text-center">
-        <?= $_SESSION['error']; ?>
-    </div>
-    <?php unset($_SESSION['error']); ?>
+        <div class="alert alert-danger text-center">
+            <?= $_SESSION['error']; ?>
+        </div>
+        <?php unset($_SESSION['error']); ?>
     <?php endif; ?>
 
     <!-- FORMULÁRIO -->
@@ -35,13 +33,14 @@
                     <div class="mb-3">
                         <label class="form-label">Nome do Pet</label>
                         <input type="text" name="nome_pet" class="form-control" placeholder="Ex: Thor, Luna, Bob"
-                            maxlength="120">
+                            maxlength="120" required>
                     </div>
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Espécie</label>
-                            <select name="especie" class="form-select">
+                            <select name="especie" class="form-select" required>
+                                <option></option>
                                 <option value="cachorro">Cachorro</option>
                                 <option value="gato">Gato</option>
                             </select>
@@ -57,20 +56,20 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Idade</label>
-                            <input type="number" name="idade" class="form-control" min="0" maxlength="2"
-                                placeholder="Ex: 3">
+                            <input type="number" name="idade" class="form-control" min="1" maxlength="2"
+                                placeholder="Ex: 3" required>
                         </div>
 
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Peso (kg)</label>
-                            <input type="number" name="peso" step="0.1" class="form-control" min="0"
-                                placeholder="Ex: 5.4">
+                            <input type="number" name="peso" step="0.1" class="form-control" min="1"
+                                placeholder="Ex: 5.4" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Sexo</label>
-                            <select name="sexo" class="form-select">
+                            <select name="sexo" class="form-select" required>
                                 <option value="macho">Macho</option>
                                 <option value="femea">Fêmea</option>
                             </select>

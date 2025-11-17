@@ -40,7 +40,6 @@ include 'includes/header.php';
 
 <div class="container py-5">
 
-    <!-- TÍTULO -->
     <div class="dashboard-welcome mb-5">
         <h3 class="fw-bold" style="color:#2b3990;">Histórico dos Pets</h3>
         <p class="text-muted mb-0">Veja tudo que seus pets já fizeram na clínica.</p>
@@ -61,40 +60,51 @@ include 'includes/header.php';
 
                     <hr>
 
-                    <h6 style="color:#2b3990;">Histórico de Atendimento:</h6>
+                    <h6 class="fw-bold" style="color:#2b3990;">Histórico de Atendimento:</h6>
 
                     <?php if (empty($historico)): ?>
                         <p class="history-item text-muted">Nenhum atendimento registrado.</p>
                     <?php endif; ?>
 
                     <?php foreach ($historico as $h): ?>
-                        <p class="history-item">
-                            <?= date("d/m/Y H:i", strtotime($h['data_hora'])) ?> —
-                            <strong><?= ucfirst($h['especialidade']) ?></strong>
+                        <div class="mb-3">
 
+                            <p class="history-item mb-1">
+                                <?= date("d/m/Y H:i", strtotime($h['data_hora'])) ?> —
+                                <strong><?= ucfirst($h['especialidade']) ?></strong>
+
+                                <!-- STATUS -->
+                                <?php if ($h['status'] == 'pendente'): ?>
+                                    <span class="badge bg-warning text-dark">Pendente</span>
+
+                                <?php elseif ($h['status'] == 'confirmado'): ?>
+                                    <span class="badge bg-info text-dark">Confirmado</span>
+
+                                <?php elseif ($h['status'] == 'concluido'): ?>
+                                    <span class="badge bg-success">Concluído</span>
+
+                                <?php elseif ($h['status'] == 'cancelado'): ?>
+                                    <span class="badge bg-danger">Cancelado</span>
+                                <?php endif; ?>
+                            </p>
+
+                            <!-- AÇÕES (somente pendente/confirmado) -->
                             <?php if ($h['status'] == 'pendente' || $h['status'] == 'confirmado'): ?>
-                                <span class="badge bg-warning text-dark">Aguardando</span>
-                        <div class="mt-2 d-flex gap-2">
+                                <div class="mt-2 d-flex gap-2">
 
-                            <a href="controllers/agendamento_confirmar.php?id=<?= $h['id'] ?>"
-                                class="btn btn-success btn-sm">Confirmar</a>
+                                    <a href="controllers/agendamento_action.php?action=confirmar&id=<?= $h['id'] ?>"
+                                        class="btn btn-success btn-sm">Confirmar</a>
 
-                            <a href="controllers/agendamento_cancelar.php?id=<?= $h['id'] ?>"
-                                class="btn btn-danger btn-sm">Cancelar</a>
+                                    <a href="controllers/agendamento_action.php?action=cancelar&id=<?= $h['id'] ?>"
+                                        class="btn btn-danger btn-sm">Cancelar</a>
 
-                            <a href="reagendar.php?id=<?= $h['id'] ?>" class="btn btn-secondary btn-sm">Reagendar</a>
+                                    <a href="reagendar.php?id=<?= $h['id'] ?>" class="btn btn-secondary btn-sm">Reagendar</a>
+
+                                </div>
+                            <?php endif; ?>
 
                         </div>
-
-                    <?php elseif ($h['status'] == 'concluido'): ?>
-                        <span class="badge bg-success">Concluído</span>
-
-                    <?php elseif ($h['status'] == 'cancelado'): ?>
-                        <span class="badge bg-danger">Cancelado</span>
-                    <?php endif; ?>
-
-                    </p>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
 
                 </div>
             </div>

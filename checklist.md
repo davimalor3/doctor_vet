@@ -1,4 +1,6 @@
 // 1 TODO: definir variaveis de ambiente para credenciais do banco de dados
+// 1 TODO: organizar rotas de controllers
+// 1 TODO: melhorar segurança de consultas
 // 1 TODO: implementar verificação de sessão expirada
 // 1 TODO: implementar regenereted_id()
 // 1 TODO: implementar proteção contra ataques de CSRF -> implementar tokens para formulários

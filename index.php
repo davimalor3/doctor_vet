@@ -1,7 +1,7 @@
     <?php include 'includes/header.php'; ?>
-    
-    
-    
+
+
+
     <!-- Conteudo Principal -->
     <section class="hero py-5 bg-gradient">
         <div class="container">
@@ -31,24 +31,17 @@
                     <div id="carouselPets" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner shadow-lg rounded">
                             <div class="carousel-item active">
-                                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=900&auto=format&fit=crop"
-                                    class="d-block w-100" alt="Cachorro feliz">
+                                <img src="assets/img/cachorros.png" class="d-block w-100" alt="Cachorros">
+
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=900&auto=format&fit=crop"
-                                    class="d-block w-100" alt="Gato fofo">
+                                <img src="assets/img/cachorro.png" class="d-block w-100" alt="Cachorro no vet">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://www.zooplus.pt/magazine/wp-content/uploads/2021/06/vet_gatos_1.webp"
-                                    class="d-block w-100" alt="Cachorro e gato juntos">
+                                <img src="assets/img/gato2.png" class="d-block w-100" alt="Gato">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://animalvet.vet.br/wp-content/uploads/slider/cache/5ed5ae83b7cb0616ed7ada71a7267bf7/clinica-veterinaria-florianopolis_servicos_exames.jpg"
-                                    class="d-block w-100" alt="Cachorro">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://premierpet.com.br/wp-content/uploads/2025/05/cao-e-gato-cobertos-1024x683.jpg"
-                                    class="d-block w-100" alt="Cachorro e gato">
+                                <img src="assets/img/gato_cachorro.png" class="d-block w-100" alt="Cachorro e gato">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselPets"

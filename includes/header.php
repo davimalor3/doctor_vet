@@ -60,7 +60,7 @@ $logged = isset($_SESSION['user_id']);
                 <?php endif; ?>
             </ul>
 
-            <!-- MENU P/ MOBILe -->
+            <!-- MENU P/ MOBILE -->
             <div class="d-flex d-md-none align-items-center gap-2">
 
                 <?php if ($logged): ?>
@@ -96,6 +96,9 @@ $logged = isset($_SESSION['user_id']);
                 <a class="mobile-link hv d-block mb-3" href="index.php">Home</a>
                 <a class="mobile-link hv d-block mb-3" href="servicos.php">Serviços</a>
                 <a class="mobile-link hv d-block mb-3" href="especialidades.php">Especialidades</a>
+                <hr>
+                <a class="mobile-link hv d-block mb-3" href="login.php">Login</a>
+                <a class="mobile-link hv d-block mb-3" href="cadastro.php">Cadastrar</a>
 
                 <?php if ($logged): ?>
                     <hr>
@@ -109,14 +112,4 @@ $logged = isset($_SESSION['user_id']);
         </div>
     </header>
 
-    <script>
-        // Toggle mobile menu
-        const toggle = document.querySelector('.mobile-menu-toggle');
-        const menu = document.getElementById('mobileMenu');
-
-        if (toggle && menu) {
-            toggle.addEventListener('click', () => {
-                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-            });
-        }
-    </script>
+    <script src="assets/js/script.js"></script>

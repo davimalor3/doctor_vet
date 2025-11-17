@@ -28,10 +28,11 @@ Isso criará todas as tabelas e relações necessárias.
 Dentro do projeto em "config/db_config.php" modifique as variaveis conforme seu banco de dados:
 
 ```php
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$db   = 'doctor_vet';
+$dbHost = '127.0.0.1';
+$dbName = 'nomedoseubanco';
+$dbUser = 'root';
+$dbPass = '';
+$dbPort = '3306';
 
 ```
 

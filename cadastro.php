@@ -44,7 +44,7 @@ include 'includes/header.php'; ?>
 
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" class="form-control" maxlength="30"
+                        <input type="tel" id="telefone" name="telefone" class="form-control" maxlength="17"
                             placeholder="(00) 9 0000-0000" required>
                         <!-- <small class="text-muted">Formato: (99) 9 9999-9999</small> -->
                     </div>
@@ -74,3 +74,4 @@ include 'includes/header.php'; ?>
 
 <!-- footer -->
 <?php include 'includes/footer.php'; ?>
+<script src="assets/js/input_mask.js"></script>

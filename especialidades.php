@@ -2,39 +2,39 @@
 <?php include 'includes/header.php'; ?>
 
 <style>
-.especialidade-card {
-    border-radius: 15px;
-    padding: 25px;
-    transition: 0.3s;
-    background: #ffffff7a;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+    .especialidade-card {
+        border-radius: 15px;
+        padding: 25px;
+        transition: 0.3s;
+        background: #ffffff7a;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
-.especialidade-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.12);
-}
+    .especialidade-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 18px rgba(0, 0, 0, 0.12);
+    }
 
-.especialidade-img {
-    height: 120px;
-    width: 120px;
-    margin: 0 auto 15px auto;
-    object-fit: contain;
-}
+    .especialidade-img {
+        height: 120px;
+        width: 120px;
+        margin: 0 auto 15px auto;
+        object-fit: contain;
+    }
 
-.especialidade-card h4 {
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
+    .especialidade-card h4 {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
 
-.especialidade-card p {
-    text-align: center;
-    color: #444;
-}
+    .especialidade-card p {
+        text-align: center;
+        color: #444;
+    }
 </style>
 
 <!-- CONTEUDO PRINCIPAL -->
@@ -49,8 +49,7 @@
         <!-- CARD 1 -->
         <div class="col-md-4 d-flex">
             <div class="especialidade-card">
-                <img src="https://cvan.vet.br/wp-content/uploads/2023/07/Property-1endocrino.png"
-                    class="especialidade-img">
+                <img src="assets/img/endocrino.png" class="especialidade-img">
                 <h4>Endoscopia / Colonoscopia</h4>
                 <p>A endoscopia e a colonoscopia permitem examinar o trato gastrointestinal com precisão e segurança.
                 </p>
@@ -60,8 +59,7 @@
         <!-- CARD 2 -->
         <div class="col-md-4 d-flex">
             <div class="especialidade-card">
-                <img src="https://cvan.vet.br/wp-content/uploads/2023/07/Property-1gastro.png"
-                    class="especialidade-img">
+                <img src="assets/img/gastro.png" class="especialidade-img">
                 <h4>Gastroenterologia</h4>
                 <p>Especialidade responsável por cuidar do estômago, intestinos, fígado e pâncreas.</p>
             </div>
@@ -70,7 +68,7 @@
         <!-- CARD 3 -->
         <div class="col-md-4 d-flex">
             <div class="especialidade-card">
-                <img src="https://cvan.vet.br/wp-content/uploads/2023/07/nutri.png" class="especialidade-img">
+                <img src="assets/img/nutri.png" class="especialidade-img">
                 <h4>Nutricionista</h4>
                 <p>A nutrição adequada garante mais saúde, energia e qualidade de vida para o pet.</p>
             </div>
@@ -79,8 +77,7 @@
         <!-- CARD 4 -->
         <div class="col-md-4 d-flex">
             <div class="especialidade-card">
-                <img src="https://cvan.vet.br/wp-content/uploads/2023/07/Property-1oftalmo.png"
-                    class="especialidade-img">
+                <img src="assets/img/oftalmo.png" class="especialidade-img">
                 <h4>Oftalmologia</h4>
                 <p>Diagnóstico e tratamento de doenças oculares, garantindo visão saudável ao pet.</p>
             </div>
@@ -89,8 +86,7 @@
         <!-- CARD 5 -->
         <div class="col-md-4 d-flex">
             <div class="especialidade-card">
-                <img src="https://cvan.vet.br/wp-content/uploads/2023/07/Property-1ultrasom.png"
-                    class="especialidade-img">
+                <img src="assets/img/ultrasom.png" class="especialidade-img">
                 <h4>Ultrassonografia</h4>
                 <p>Exame de imagem seguro para avaliar órgãos internos e auxiliar diagnósticos.</p>
             </div>
@@ -99,8 +95,7 @@
         <!-- CARD 6 -->
         <div class="col-md-4 d-flex">
             <div class="especialidade-card">
-                <img src="https://cvan.vet.br/wp-content/uploads/2023/07/Property-1Gastroenterologia.png"
-                    class="especialidade-img">
+                <img src="assets/img/Gastroenterologia.png" class="especialidade-img">
                 <h4>Endocrinologia</h4>
                 <p>Especialidade dedicada às doenças hormonais e metabólicas dos animais.</p>
             </div>

@@ -9,6 +9,13 @@ $pets = Pets::getByUser($_SESSION['user_id']);
 
 include 'includes/header.php';
 ?>
+<!-- BOTÃO DE VOLTAR -->
+<div class="container mt-3">
+    <a href="dashboard.php" class="btn-back-floating">
+        <i class="bi bi-chevron-left"></i>
+    </a>
+</div>
+
 
 <div class="container py-5">
 

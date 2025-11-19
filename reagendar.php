@@ -21,6 +21,13 @@ $hora = date("H:i", strtotime($ag['data_hora']));
 include 'includes/header.php';
 ?>
 
+<!-- BOTÃO DE VOLTAR -->
+<div class="container mt-3">
+    <a href="historico.php" class="btn-back-floating">
+        <i class="bi bi-chevron-left"></i>
+    </a>
+</div>
+
 <div class="container py-5">
 
     <h3 class="fw-bold mb-4" style="color:#2b3990;">Reagendar Atendimento</h3>

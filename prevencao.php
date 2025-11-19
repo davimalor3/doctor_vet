@@ -1,6 +1,13 @@
 <!-- HEADER -->
 <?php include 'includes/header.php'; ?>
 
+<!-- BOTÃO DE VOLTAR -->
+<div class="container mt-3">
+    <a href="servicos.php" class="btn-back-floating">
+        <i class="bi bi-chevron-left"></i>
+    </a>
+</div>
+
 <!-- CONTEÚDO PRINCIPAL -->
 <main class="container py-5">
     <h2 class="text-center mb-5">Prevenção e Cuidados</h2>

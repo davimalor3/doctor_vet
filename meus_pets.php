@@ -8,6 +8,14 @@ $pets = Pets::getByUser($_SESSION['user_id']);
 
 include 'includes/header.php';
 ?>
+
+<!-- BOTÃO DE VOLTAR -->
+<div class="container mt-3">
+    <a href="dashboard.php" class="btn-back-floating">
+        <i class="bi bi-chevron-left"></i>
+    </a>
+</div>
+
 <style>
     .dashboard-welcome {
         background: #f8f9fa;
@@ -69,7 +77,7 @@ include 'includes/header.php';
 <!-- Conteudo Principalç -->
 <div class="container py-5">
 
-    <!-- BEM-VINDO  -->
+    <!-- BEM-VINDO / TÍTULO -->
     <div class="dashboard-welcome mb-5">
         <h3 class="fw-bold" style="color:#2b3990;">Meus Pets</h3>
         <p class="text-muted mb-0">Aqui estão todos os seus pets cadastrados com todas as informações.</p>
@@ -114,7 +122,7 @@ include 'includes/header.php';
 
         </div>
 
-        <!-- INFORMAÇÕES PARA TESTAR PAGINA -->
+        <!-- PET 1 -->
         <!-- <div class="col-md-4">
             <div class="pet-card">
                 <h5 class="fw-bold">Bolt</h5>
@@ -127,6 +135,7 @@ include 'includes/header.php';
             </div>
         </div> -->
 
+        <!-- PET 2 -->
         <!-- <div class="col-md-4">
             <div class="pet-card">
                 <h5 class="fw-bold">Luna</h5>
@@ -139,6 +148,7 @@ include 'includes/header.php';
             </div>
         </div> -->
 
+        <!-- PET 3 -->
         <!-- <div class="col-md-4">
             <div class="pet-card">
                 <h5 class="fw-bold">Max</h5>

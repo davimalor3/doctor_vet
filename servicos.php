@@ -1,6 +1,13 @@
 <!-- HEADER -->
 <?php include 'includes/header.php'; ?>
 
+<!-- BOTÃO DE VOLTAR -->
+<div class="container mt-3">
+    <a href="index.php" class="btn-back-floating">
+        <i class="bi bi-chevron-left"></i>
+    </a>
+</div>
+
 <!-- SEÇÃO PRINCIPAL -->
 <section class="py-5 bg-gradient">
     <div class="container text-center">

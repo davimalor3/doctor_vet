@@ -10,6 +10,14 @@ if (!empty($_SESSION['user_id'])) {
 
 include 'includes/header.php'; ?>
 
+<!-- BOTÃO DE VOLTAR -->
+<div class="container mt-3">
+    <a href="index.php" class="btn-back-floating">
+        <i class="bi bi-chevron-left"></i>
+    </a>
+</div>
+
+
 <!-- Mensagem de erro -->
 <?php if (isset($_SESSION['error'])): ?>
     <div class="alert alert-danger text-center">

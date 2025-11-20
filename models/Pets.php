@@ -59,6 +59,7 @@ class Pets
     {
         global $pdo;
 
+        // Monta a query SQL para atualizar os dados do pet
         $sql = "UPDATE pets SET
                 nome_pet = :nome_pet,
                 especie = :especie,
@@ -91,8 +92,9 @@ class Pets
     public static function delete($id, $user_id)
     {
         global $pdo;
-
+        //  Monta a query SQL para deletar o pet
         $sql = "DELETE FROM pets WHERE id = :id AND user_id = :user_id";
+        //  Executa a query recebendo os parâmetros
         $stmt = $pdo->prepare($sql);
         return $stmt->execute(['id' => $id, 'user_id' => $user_id]);
     }

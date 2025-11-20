@@ -27,6 +27,7 @@
                     </div>
                 </div>
 
+                <!-- Carrossel inicio -->
                 <div class="col-lg-6 text-center mt-4 mt-lg-0">
                     <div id="carouselPets" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner shadow-lg rounded">
@@ -102,4 +103,119 @@
         </div>
     </section>
 
+
+    <!-- Sobre Nós -->
+    <div id="sobre_nos">
+    </div>
+    <section class="py-5 stats-section3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/doutora21.jpeg" class="img-fluid" alt="Dr Pet" width="600">
+                </div>
+                <div class="col-md-6">
+                    <h3>Nossa Clínica</h3>
+                    <h3 style="text-align: right;"> <span style="
+                    background-color: var(--primary);
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 8px;">
+                            Com 19 anos de experiência...
+                        </span></h3>
+                    <p><strong>Dr. PET</strong>&nbsp;é uma clínica veterinária completa, que conta com uma equipe de
+                        clínicos gerais capacitados, além de diversas especialidades, trazendo os mais avançados
+                        recursos da Medicina Veterinária. Tudo para proporcionar os melhores tratamentos, com seriedade
+                        e comprometimento.</p>
+                    <h3>Missão</h3>
+                    <p>Proporcionar serviços que objetivem saúde e bem-estar aos nossos pacientes (os animais) e
+                        satisfazer as expectativas dos nossos clientes (os proprietários dos animais).</p>
+                    <h3>Visão</h3>
+                    <p>Ser reconhecida como uma empresa referência na área clínica, cirúrgica e de especialidades na
+                        Medicina Veterinária de pequenos animais. Valores/Princípios: ética, honestidade, transparência,
+                        atualização técnica, comprometimento, profissionalismo, excelência em atendimento, respeito e
+                        amor aos animais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pronto ATENDIMENTO -->
+    <section class="py-5 stats-section2">
+        <div class="container">
+            <h4>Aberto24h</h4>
+            <h3>Pronto Atendimento</h3>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="atendimento-box">
+                        <h5>Cirurgia geral</h5>
+                        <p>A Clinica Veterinária Dr Pet tem dois centros cirúrgicos equipados.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="atendimento-box">
+                        <h5>Clínica Médica</h5>
+                        <p>A Clinica Veterinária Dr Pet tem dois centros cirúrgicos equipados.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="atendimento-box">
+                        <h5>Internação</h5>
+                        <p>A Clinica Veterinária Dr Pet tem dois centros cirúrgicos equipados.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="atendimento-box">
+                        <h5>Vacinação</h5>
+                        <p>A Clinica Veterinária Dr Pet tem dois centros cirúrgicos equipados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- MÉTRICAS -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row text-center g-4">
+
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <i class="bi bi-person-badge-fill"></i>
+                        <h2 class="stat-number" data-target="15">0</h2>
+                        <p>ESPECIALISTAS</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <i class="bi bi-list-check"></i>
+                        <h2 class="stat-number" data-target="21">0</h2>
+                        <p>SERVIÇOS OFERECIDOS</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <i class="bi bi-people-fill"></i>
+                        <h2 class="stat-number" data-target="5300">+0</h2>
+                        <p>CLIENTES ATENDIDOS</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <i class="bi bi-clock-history"></i>
+                        <h2 class="stat-number" data-target="24">0</h2>
+                        <p>HORAS POR DIA</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contador métricas -->
+    <script src="assets/js/contador_metricas.js"></script>
     <?php include 'includes/footer.php'; ?>

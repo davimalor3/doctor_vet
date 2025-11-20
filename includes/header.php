@@ -34,28 +34,29 @@ $logged = isset($_SESSION['user_id']);
                 <li><a class="nav-link hv" href="especialidades.php">Especialidades</a></li>
 
                 <?php if (!$logged): ?>
-                    <li><a class="btn btn-primary btn-sm" href="login.php">Entrar</a></li>
+                <li><a class="btn btn-primary btn-sm" href="login.php">Entrar</a></li>
 
                 <?php else: ?>
 
-                    <!-- botão DROPDOWN -->
-                    <li class="dropdown">
-                        <button class="btn btn-outline-secondary btn-sm account-btn" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="bi bi-list"></i>
-                        </button>
+                <!-- botão DROPDOWN -->
+                <li class="dropdown">
+                    <button class="btn btn-outline-secondary btn-sm account-btn" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </button>
 
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item dd-hv" href="dashboard.php">Dashboard</a></li>
-                            <li><a class="dropdown-item dd-hv" href="meus_pets.php">Meus Pets</a></li>
-                            <li><a class="dropdown-item dd-hv" href="historico.php">Histórico</a></li>
-                            <li><a class="dropdown-item dd-hv" href="agendar.php">Agendamentos</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-danger dd-hv" href="controllers/logout.php">Sair</a></li>
-                        </ul>
-                    </li>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item dd-hv" href="dashboard.php">Dashboard</a></li>
+                        <li><a class="dropdown-item dd-hv" href="perfil_usuario.php">Perfil</a></li>
+                        <li><a class="dropdown-item dd-hv" href="meus_pets.php">Meus Pets</a></li>
+                        <li><a class="dropdown-item dd-hv" href="historico.php">Histórico</a></li>
+                        <li><a class="dropdown-item dd-hv" href="agendar.php">Agendamentos</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger dd-hv" href="controllers/logout.php">Sair</a></li>
+                    </ul>
+                </li>
 
                 <?php endif; ?>
             </ul>
@@ -64,7 +65,7 @@ $logged = isset($_SESSION['user_id']);
             <div class="d-flex d-md-none align-items-center gap-2">
 
                 <?php if ($logged): ?>
-                    <!-- <div class="dropdown">
+                <!-- <div class="dropdown">
                         <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="dropdown">
                             <i class="bi bi-list"></i>
                         </button>
@@ -101,12 +102,13 @@ $logged = isset($_SESSION['user_id']);
                 <a class="mobile-link hv d-block mb-3" href="cadastro.php">Cadastrar</a>
 
                 <?php if ($logged): ?>
-                    <hr>
-                    <a class="mobile-link hv d-block mb-3" href="dashboard.php">Dashboard</a>
-                    <a class="mobile-link hv d-block mb-3" href="meus_pets.php">Meus Pets</a>
-                    <a class="mobile-link hv d-block mb-3" href="historico.php">Histórico</a>
-                    <a class="mobile-link hv d-block mb-3" href="agendar.php">Agendamentos</a>
-                    <a class="mobile-link text-danger hv d-block" href="controllers/logout.php">Sair</a>
+                <hr>
+                <a class="mobile-link hv d-block mb-3" href="dashboard.php">Dashboard</a>
+                                        <li><a class="dropdown-item dd-hv" href="perfil_usuario.php">Perfil</a></li>
+                <a class="mobile-link hv d-block mb-3" href="meus_pets.php">Meus Pets</a>
+                <a class="mobile-link hv d-block mb-3" href="historico.php">Histórico</a>
+                <a class="mobile-link hv d-block mb-3" href="agendar.php">Agendamentos</a>
+                <a class="mobile-link text-danger hv d-block" href="controllers/logout.php">Sair</a>
                 <?php endif; ?>
             </div>
         </div>
